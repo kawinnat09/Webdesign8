@@ -9,10 +9,10 @@ $them-color: (
 }
 
 body{
-    background-color: map-get(color(primary));
-    color: map-get(color(secondary));
+    background-color: (color(primary));
+    color: (color(secondary));
 
     input{
-        color: map-get(color(accent));
+        color: (color(accent));
     }
 }
