@@ -1,0 +1,14 @@
+$them-color: (
+    primary: rgb(109, 100, 241),
+    secondary: rgb(0, 238, 255),
+    accent: red,
+);
+
+body{
+    background-color: map-get($them-color , primary);
+    color: map-get($them-color , secondary );
+
+    input{
+        color: map-get($them-color , accent );
+    }
+}
