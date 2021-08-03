@@ -1,0 +1,18 @@
+$them-color: (
+    primary: rgb(109, 100, 241),
+    secondary: rgb(0, 238, 255),
+    accent: red,
+);
+
+@function color($color-type){
+    @return map-get($them-color, $color-type);
+}
+
+body{
+    background-color: map-get(color(primary));
+    color: map-get(color(secondary));
+
+    input{
+        color: map-get(color(accent));
+    }
+}
